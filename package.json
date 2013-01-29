@@ -1,0 +1,22 @@
+{
+  "name": "this-is-a-test",
+  "version": "0.0.0",
+  "description": "Demo on how to test effectively",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=test make test"
+  },
+  "repository": "",
+  "author": "Cameron Bytheway <cameron@nujii.com>",
+  "license": "MIT",
+  "dependencies": {
+    "superagent": "~0.12.1",
+    "express": "~3.1.0",
+    "startup": "0.0.14"
+  },
+  "devDependencies": {
+    "should": "~1.2.1",
+    "supertest": "~0.5.1",
+    "mocha": "~1.8.1"
+  }
+}
