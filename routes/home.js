@@ -22,3 +22,13 @@ exports.index = function() {
     );
   };
 };
+
+
+/*
+ * Show the homepage
+ */
+exports.login = function() {
+  return function login(req, res, next) {
+    res.redirect("/users");
+  };
+};

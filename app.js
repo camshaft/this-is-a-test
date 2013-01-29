@@ -15,6 +15,7 @@ app.configure(function() {
 
 // Home
 app.get("/", home.index());
+app.post("/", home.login());
 
 // Users resources
 app.get("/users", users.index());
