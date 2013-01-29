@@ -101,6 +101,7 @@ describe("users", function() {
         should.exist(user);
         should.exist(user.birthday);
         user.birthday.should.eql("12-12-2001");
+        done();
       });
     });
 
@@ -126,6 +127,7 @@ describe("users", function() {
         users.get(id, function(err, user) {
           should.not.exist(user);
           should.exist(err);
+          done();
         });
       })
 
