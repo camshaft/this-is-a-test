@@ -2,7 +2,8 @@
  * Module dependencies
  */
 var express = require("express")
-  , home = require("./routes/home");
+  , home = require("./routes/home")
+  , users = require("./routes/users");
 
 var app = module.exports = express();
 
@@ -14,3 +15,10 @@ app.configure(function() {
 
 // Home
 app.get("/", home.index());
+
+// Users resources
+app.get("/users", users.index());
+app.post("/users", users.create());
+app.get("/users/:id", users.get());
+app.put("/users/:id", users.update());
+app.del("/users/:id", users.remove());
